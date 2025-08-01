@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="overlay"></div>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="logo">Luminous Light</div>
+            </div>
+            <div class="nav-right">
+                <div class="search_bar">
+                    <input type="text" placeholder="Search...">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+                <a href="admin.html" class="nav-icon-link" title="Admin Panel">
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </a>
+                <div class="cart-icon" title="Shopping Cart">
+                    <svg  class="nav-icon" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.51528 10.307L5.89028 15.307C6.01993 17.3655 7.71485 18.9758 9.77728 19H15.2293C17.2921 18.9763 18.9876 17.3659 19.1173 15.307L19.4923 10.307C19.5889 9.21028 19.2245 8.12286 18.4867 7.30572C17.7488 6.48858 16.7041 6.01549 15.6033 6H9.40328C8.3026 6.01577 7.25816 6.48898 6.52054 7.30608C5.78293 8.12319 5.41871 9.21045 5.51528 10.307Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15.5033 10C15.5033 11.0718 14.9315 12.0622 14.0033 12.5981C13.0751 13.134 11.9315 13.134 11.0033 12.5981C10.0751 12.0622 9.5033 11.0718 9.5033 10" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                   <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Our Candles</h1>
+        <div id="product_container"></div>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div id="product_detail_modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <div id="modal_body"></div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart_sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Shopping Cart</h2>
+            <span class="close-cart-btn">×</span>
+        </div>
+        <div id="cart_items"></div>
+        <div class="sidebar-footer">
+            <p>Total: $<span id="cart_total">0.00</span></p>
+            <button id="checkout_btn" class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Luminous Light. All rights reserved.</p>
+    </footer>
+    <script src="datamanager.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

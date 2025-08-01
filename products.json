@@ -1,0 +1,150 @@
+[
+    {
+        "id": 1,
+        "name": "Nocturne Blanc",
+        "price": 16,
+        "quantity": 15,
+        "image": 
+        {
+            "white": "https://dinarapk.com/cdn/shop/files/IMG-8092.jpg?v=1737210303&width=713",
+            "green": "https://dinarapk.com/cdn/shop/files/IMG-8089.jpg?v=1740086632&width=1100"
+        },
+        "scent": "White Musk",
+        "colors": 
+        [
+            "color(display-p3 0.72 0.63 0.55)",
+            "color(display-p3 0.15 0.23 0.17)"
+        ],
+        "description": "A serene blend of white musk and delicate florals, wrapped in minimalist elegance. Perfect for unwinding after a long day."
+    },
+    {
+        "id": 2,
+        "name": "Crimson Crown",
+        "price": 30,
+         "quantity": 20,
+        "image": 
+        {
+            "beige": "https://dinarapk.com/cdn/shop/files/WhatsAppImage2023-05-19at13.49.32.jpg?v=1740086634&width=246",
+            "black": "https://dinarapk.com/cdn/shop/products/77deb1e60103d9d16bb14b440bd43130.jpg?v=1684486258&width=1100"
+        },
+        "scent": "Honeyed Rose & Amber",
+        "colors": 
+        [
+            "color(display-p3 0.5 0.42 0.31)",
+            "color(display-p3 0.14 0.14 0.14)"
+        ],
+        "description": "Luxurious honeyed rose and amber unite in this regal candle, adding warmth and sophistication to any space."
+    },
+    {
+        "id": 3,
+        "name": "Mimosa Mist",
+        "price": 15,
+        "quantity": 17,
+        "image": 
+        {
+            "white": "https://cdn.shopify.com/s/files/1/0694/2428/3942/files/8907895146788_1_270x.jpg?v=1747396828",
+            "yellow": "http://purehomeandliving.com/cdn/shop/files/8907895146740_1.jpg?v=1747396616&width=700",
+            "black": "https://cdn.shopify.com/s/files/1/0694/2428/3942/files/8907895146795_1_270x.jpg?v=1747396891"
+        },
+        "scent": "Citrus and vanilla",
+        "colors": 
+        [
+            "color(display-p3 0.74 0.61 0.43)",
+            "color(display-p3 0.85 0.61 0.31)",
+            "color(display-p3 0.57 0.52 0.45)"
+        ],
+        "description": "Bright citrus kissed by vanilla—a cheerful, refreshing scent that brings sunshine indoors."
+    },
+    {
+        "id": 4,
+        "name": "Whispering Petals",
+        "price": 25,
+        "quantity": 30,
+        "image": 
+        {
+            "pink": "https://dinarapk.com/cdn/shop/products/b296243642e1dfc9e96471e2087b37dc.jpg?v=1740086683&width=600",
+            "yellow": "https://dinarapk.com/cdn/shop/files/WhatsAppImage2024-12-28at17.17.58_4afb9359.jpg?v=1740086683&width=600"
+        },
+        "scent": "Rose",
+        "colors": 
+        [
+            "color(display-p3 0.63 0.39 0.37)",
+            "color(display-p3 0.69 0.53 0.27)"
+        ],
+        "description": "Timeless rose fragrance, softly romantic and ideal for creating a tranquil, floral ambiance."
+    },
+    {
+        "id": 5,
+        "name": "Velvet Blossom",
+        "price": 25,
+        "quantity": 15,
+        "image": 
+        {
+            "white": "https://i.etsystatic.com/51392274/r/il/eb71ba/6761263718/il_1588xN.6761263718_do95.jpg",
+            "pink": "https://i.etsystatic.com/51392274/r/il/1595f2/6761264744/il_1588xN.6761264744_orao.jpg"
+        },
+        "scent": "Jasmine",
+        "colors": 
+        [
+            "color(display-p3 0.84 0.77 0.65)",
+            "color(display-p3 0.82 0.64 0.57)"
+        ],
+        "description": "Opulent jasmine swirls through creamy wax, evoking moonlit gardens and quiet indulgence."
+    },
+    {
+        "id": 6,
+        "name": "Vintage Merlot",
+        "price": 40,
+        "quantity": 35,
+        "image": 
+        {
+            "maroon": "https://i.etsystatic.com/54862331/r/il/4bbdf5/7108682205/il_1588xN.7108682205_3ul3.jpg",
+            "white": "https://i.etsystatic.com/54862331/r/il/cf0c77/7108682167/il_1588xN.7108682167_19qt.jpg"
+        },
+        "scent": "Peony & Vanilla",
+        "colors": 
+        [
+            "color(display-p3 0.25 0.07 0.05)",
+            "color(display-p3 0.71 0.62 0.45)"
+        ],
+        "description": "Rich peony and vanilla blend like a fine wine—deep, velvety, and irresistibly cozy."
+    },
+    {
+        "id": 7,
+        "name": "Crimson Whisper",
+        "price": 35,
+        "quantity": 18,
+        "image": 
+        {
+            "pink": "http://i.etsystatic.com/60377077/r/il/e692e9/6970106924/il_1588xN.6970106924_tqjs.jpg",
+            "red": "https://i.etsystatic.com/60377077/r/il/a32777/6970106922/il_1588xN.6970106922_rh6e.jpg"
+        },
+        "scent": "Berry Sangria",
+        "colors": 
+        [
+            "color(display-p3 0.46 0.24 0.28)",
+            "color(display-p3 0.36 0.07 0.08)"
+        ],
+        "description": "Juicy berry sangria with a hint of spice—bold, vibrant, and perfect for lively gatherings."
+    },
+    {
+        "id": 8,
+        "name": "Luminous Bloom",
+        "price": 20,
+        "quantity": 25,
+        "image": 
+        {
+            "yellow": "https://i.etsystatic.com/50376983/r/il/cb3219/6114347341/il_1588xN.6114347341_rkdc.jpg",
+            "white": "https://i.etsystatic.com/50376983/r/il/d809b3/6114347345/il_1588xN.6114347345_logj.jpg",
+            "pink": "https://i.etsystatic.com/50376983/r/il/c3fdea/6114347343/il_1588xN.6114347343_8dju.jpg"
+        },
+        "scent": "Coconut Milk & Musk",
+        "colors": 
+        [
+            "color(display-p3 0.76 0.63 0.38)",
+            "color(display-p3 0.81 0.8 0.74)",
+            "color(display-p3 0.83 0.76 0.71)"
+        ],
+        "description": "Creamy coconut milk and musk melt into a dreamy, skin-like scent—soft, warm, and endlessly comforting."
+    }
+]
