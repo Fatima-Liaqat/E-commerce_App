@@ -87,7 +87,25 @@ document.addEventListener('DOMContentLoaded', () =>
         
         addProductForm.reset();
         await displayAdminProducts();
-        alert('Product added successfully!');
+        await showSuccessModal('Product added successfully!');
+    }
+    function showSuccessModal(message) 
+    {
+        return new Promise((resolve) => 
+        {
+            const modal = document.getElementById("successModal");
+            const closeBtn = document.getElementById("successCloseBtn");
+            const msgText = document.getElementById("successMessage");
+
+            msgText.textContent = message;
+            modal.style.display = "block";
+
+            closeBtn.onclick = () => 
+            {
+                modal.style.display = "none";
+                resolve();
+            };
+        });
     }
 
     /* Update product quantity */
@@ -107,20 +125,41 @@ document.addEventListener('DOMContentLoaded', () =>
             await displayAdminProducts();
         }
     }
-
-    /* Remove product */
+    function showCustomConfirm() 
+    {
+        return new Promise((resolve) => 
+        {
+            const modal = document.getElementById("confirmModal");
+            const yesBtn = document.getElementById("confirmYes");
+            const noBtn = document.getElementById("confirmNo");
+            modal.style.display = "block";
+            yesBtn.onclick = () => 
+            {
+                modal.style.display = "none";
+                resolve(true);
+            };
+            noBtn.onclick = () => 
+            {
+                modal.style.display = "none";
+                resolve(false);
+            };
+        });
+    }
     async function removeProduct(productId) 
     {
-        if (!confirm("Are you sure you want to remove this product?")) 
+        const userConfirmed = await showCustomConfirm();
+        if (!userConfirmed) 
         {
             return;
         }
+
         let products = await getProducts();
         const updatedProducts = products.filter(product => product.id !== productId);
         saveProducts(updatedProducts);
         await displayAdminProducts();
     }
 
+   
     addProductForm.addEventListener('submit', handleAddProduct);
     displayAdminProducts();
 });
