@@ -43,6 +43,22 @@
                 <input type="text" id="product_color_2" placeholder="Color Value 2 (e.g., #00FF00)">
                 <button type="submit">Add Product</button>
             </form>
+            <!-- Success Modal -->
+            <div id="successModal" class="modal">
+                <div class="modal-content">
+                    <p id="successMessage">Product added successfully!</p>
+                    <button id="successCloseBtn" class="confirm-btn">OK</button>
+                </div>
+            </div>
+
+            <div id="confirmModal" class="modal">
+                <div class="modal-content">
+                    <p>Are you sure you want to remove this product?</p>
+                    <button id="confirmYes" class="confirm-btn">Yes</button>
+                    <button id="confirmNo" class="cancel-btn">No</button>
+                </div>
+            </div>
+
         </section>
 
         <!-- Manage Products Section -->
