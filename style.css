@@ -1,10 +1,27 @@
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v25/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9FbeM5h_t4w.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+html 
+{
+  scroll-behavior: smooth;
+}
+
 /* General body styles */
 body 
 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0;
     margin: 0;
     background-color: #f9f9f9;
     color: #333;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
 }
 
 body.noscroll 
@@ -43,18 +60,30 @@ header
 nav 
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 2rem;
 }
 
-.nav-left, .nav-right 
+.nav-left, .nav-right
 {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-
+.nav-center ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3vw;
+}
+.nav-center a
+{
+    color: white;
+    text-decoration: none;
+}
 .logo 
 {
     font-size: 1.5rem;
@@ -62,6 +91,11 @@ nav
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.logo a
+{
+    text-decoration: none;
+    color: white;
+}
 .search_bar 
 {
     position: relative;
@@ -133,6 +167,57 @@ nav
     font-size: 12px;
     border: 2px solid #333;
     font-weight: bold;
+}
+.home_main
+{
+    padding: 0;
+    margin: 0;
+}
+.hero_container img
+{
+    width: 99.5vw;
+    height: 70vh;;
+    margin-left: 0vw;
+    margin-top: 9vh;
+    margin-bottom: 5vh;
+    
+}
+.hero_container p
+{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 30%;
+    left: 60%;
+    margin-right: 6vw;
+    font-family: 'Dancing Script';
+    font-size: 3vw;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero_container a
+{
+    text-decoration: none;
+    color:  rgb(0, 0, 0);
+    
+}
+.hero_container button
+{
+    position: absolute;
+    top: 65%;
+    left: 68%;
+    width: 13vw;
+    height: 8vh;
+    border-radius: 1vw;
+    border: none;
+    box-shadow: 0.5vw;
+    background-color:rgb(195, 181, 155);
+    color:  rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 20vw;
+    cursor: pointer;
+
 }
 
 /* Button styles */
@@ -442,7 +527,66 @@ nav
     font-weight: bold;
     margin: 0 0 1rem 0;
 }
+.footer_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+.footer_container div
+{
+    display: flex;
+    flex-direction: column;
+}
+ .shop ul, .company ul, .help ul
+{
+    text-align: left;
+}
+.shop li, .company li, .help li
+{
+    margin-top: 2vh;
+}
+ .shop h4
+{
+    text-align: center;
+    justify-content: center;
 
+}
+.company h4
+{
+    margin-left: 2.5vw;
+
+}
+.help h4
+{
+    text-align: left;
+    margin-left: 3vw;
+
+}
+.social ul
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: -3vw;
+    gap: 1vw;
+}
+
+.footer_container ul
+{
+    list-style: none;
+}
+.shop a, .company a, .help a
+{
+    text-decoration: none;
+    color: white;   
+}
+
+.shop ul, .company ul, .help ul
+{
+    margin-top: -2vh;
+}
 /* Product and checkout page styles */
 #product_container 
 {
@@ -694,10 +838,22 @@ footer
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: auto;
+    padding: 2rem 0rem;
+    margin-top: 20vh;
 }
+.copyright
+{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: 4vh;
 
+}
+.copyright p 
+{
+    margin-top: 5vh;
+}
 .cart-empty-text 
 {
     text-align: center;
@@ -786,7 +942,8 @@ footer
   width: 300px;
   text-align: center;
   border-radius: 10px;
-}
+  
+} 
 
 .confirm-btn, .cancel-btn 
 {
@@ -807,6 +964,82 @@ footer
 {
   background-color: #6c757d;
   color: white;
+}
+
+/* TESTIMONIALS SECTION STYLES */
+
+.testimonials-section {
+    padding: 40px 2rem 60px 2rem;
+    background-color: #ffffff; /* Matches your product card background for a seamless look */
+    margin-top: 4rem;
+}
+
+.testimonials-section .section-title {
+    font-size: 2.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Using your elegant logo font */
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    /* Using a grid that fits your product layout style */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    box-sizing: border-box;
+    background-color: #fff;
+    /* Replicating your product card style for consistency */
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Using the same hover effect as your product cards */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.testimonial-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; /* Circular images for people */
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    border: 3px solid #f0f0f0;
+}
+
+.testimonial-quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666; /* Matching your product description color */
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+    flex-grow: 1; /* Allows cards of different text length to align nicely */
+}
+
+.testimonial-author {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.testimonial-rating {
+    color: #C19A6B; /* Using your main theme color for the stars */
+    font-size: 1.3rem;
+    letter-spacing: 2px;
 }
 
 /* Responsive styles */
@@ -897,6 +1130,206 @@ footer
 
 @media (max-width: 480px) 
 {
+    .product 
+    {
+        width: 100%;
+    }
+    
+    .sidebar 
+    {
+        max-width: 90%;
+    }
+    
+    #add_product_form 
+    {
+        grid-template-columns: 1fr;
+    }
+}
+/* RESPONSIVE STYLES */
+
+@media (max-width: 768px) 
+{
+    main 
+    {
+        padding: 1rem;
+    }
+    
+    /* --- Navbar Responsive Styles --- */
+    nav 
+    {
+        padding: 0.8rem 1rem;
+    }
+    
+    .nav-left, .nav-right 
+    {
+        gap: 1rem;
+    }
+
+    /* Hide the center navigation links on tablets and mobile */
+    .nav-center 
+    {
+        display: none; 
+    }
+    
+    .logo 
+    {
+        font-size: 1.2rem;
+    }
+    
+    /* Hide the search bar on tablets and mobile */
+    .search_bar 
+    {
+        display: none;
+    }
+
+    /* --- Hero Section Responsive Styles --- */
+    .hero_container img
+    {
+        height: 50vh; /* Reduce image height on smaller screens */
+        object-fit: cover; /* Ensure image covers the area without distortion */
+        margin-top: 0; /* Remove top margin */
+    }
+
+    .hero_container p /* Hero Text */
+    {
+        /* Center the text over the image */
+        width: 90%;
+        left: 50%;
+        top: 25%;
+        transform: translateX(-50%);
+        text-align: center;
+        /* Use a more stable font size unit for mobile */
+        font-size: 6vw; 
+    }
+
+    .hero_container button
+    {
+        /* Center the button and adjust position */
+        width: 40vw; /* Make button wider */
+        height: 7vh;
+        left: 50%;
+        top: 55%;
+        transform: translateX(-50%);
+        font-size: 3.5vw; /* Adjust font size for mobile */
+    }
+    
+    /* --- Testimonials Responsive Styles --- */
+    .testimonials-section {
+        padding: 40px 1rem;
+    }
+
+    /* --- Footer Responsive Styles --- */
+    .footer_container
+    {
+        /* Stack the footer sections vertically */
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer_container div
+    {
+        align-items: center;
+    }
+
+    /* Reset margins for centered layout */
+    .company h4, .help h4, .social ul
+    {
+        margin-left: 0;
+    }
+    .social ul
+    {
+        justify-content: center;
+        gap: 1.5rem; /* Give icons more space */
+    }
+
+    /* --- General Layout Styles for 768px --- */
+    #product_container 
+    {
+        gap: 15px;
+    }
+    
+    .product 
+    {
+        width: 45%;
+    }
+    
+    #product_detail_container 
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .product-details 
+    {
+        align-items: center;
+    }
+    
+    .product-title, .product-scent, .product-price, .product-description 
+    {
+        text-align: center;
+    }
+    
+    .add-to-cart-btn, #add_product_form button, .place-order-btn 
+    {
+        width: 100%;
+        align-self: center;
+    }
+    
+    .checkout-container 
+    {
+        flex-direction: column-reverse;
+    }
+    
+    .admin-main 
+    {
+        padding: 1rem;
+    }
+    
+    .admin-main section 
+    {
+        padding: 1.5rem;
+    }
+    
+    .admin-product-item 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    .hero_container
+    {
+        margin-top: 8vh !important;
+    }
+    .hero_container img 
+    {
+        width: 99.5vw;
+    }
+    /* --- Hero Section fine-tuning for small phones --- */
+    .hero_container p
+    {
+        font-size: 7vw; /* Make text slightly larger on very small screens */
+        top: 28% !important;
+    }
+    .hero_container button
+    {
+        top: 42% !important;
+        width: 40vw;
+        height: 5vh !important;
+        font-size: 4.5vw;
+        border-radius: 2vw !important;
+
+    }
+
+    /* --- General Layout Styles for 480px --- */
     .product 
     {
         width: 100%;

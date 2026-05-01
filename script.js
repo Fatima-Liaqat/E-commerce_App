@@ -154,14 +154,12 @@ document.addEventListener('DOMContentLoaded', async () =>
         localStorage.setItem('cart', JSON.stringify(cart));
     }
 
-    
     function removeCartItem(productId, color) 
     {
         cart = cart.filter(item => !(item.id === productId && item.color === color));
         updateCart(); 
     }
 
-    
     function changeCartQuantity(productId, color, change) 
     {
         const cartItem = cart.find(item => item.id === productId && item.color === color);
@@ -170,7 +168,6 @@ document.addEventListener('DOMContentLoaded', async () =>
             cartItem.quantity += change;
             if (cartItem.quantity <= 0) 
             {
-                
                 removeCartItem(productId, color);
             } 
             else 
@@ -194,13 +191,11 @@ document.addEventListener('DOMContentLoaded', async () =>
     overlay.addEventListener('click', closeCart);
     checkoutBtn.addEventListener('click', () => { if (cart.length > 0) window.location.href = 'checkout.html'; });
     searchInput.addEventListener('input', handleSearch);
-
     
     cartItemsContainer.addEventListener('click', (e) => 
     {
         const target = e.target;
 
-        
         const quantityBtn = target.closest('.change-quantity');
         if (quantityBtn) 
         {
@@ -213,7 +208,6 @@ document.addEventListener('DOMContentLoaded', async () =>
             return; 
         }
 
-        
         const removeBtn = target.closest('.remove-from-cart-btn');
         if (removeBtn) 
         {

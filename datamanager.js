@@ -4,6 +4,7 @@ function saveProducts(products)
     localStorage.setItem('products', JSON.stringify(products));
 }
 
+
 /* Get all products from local storage or fetch initial data */
 async function getProducts() 
 {
